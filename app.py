@@ -121,9 +121,9 @@ if st.session_state.spiel_aktiv:
 
         if letzter["Ergebnis"] == "Richtig":
 
-            if st.session_state.versuche > 5:
+            if st.session_state.versuche > 6:
                 rueckgeld = st.session_state.einsatz * 0.5
-            elif st.session_state.versuche < 5:
+            elif st.session_state.versuche < 6:
                 rueckgeld = st.session_state.einsatz * 1.5
             else:
                 rueckgeld = st.session_state.einsatz
